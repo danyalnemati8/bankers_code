@@ -1,4 +1,4 @@
-//Danyal Nemati and Joel Anil John
+//Danyal Nemati 
 #include <stdio.h>
 #include <pthread.h>
 #include <semaphore.h>
