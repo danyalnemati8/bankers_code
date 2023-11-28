@@ -4,7 +4,7 @@
         {
             "label": "build",
             "type": "shell",
-            "command": "gcc",
+            "command": "path_to_clang++",  // Use the actual Clang path here
             "args": [
                 "-o",
                 "dining_philosophers",
