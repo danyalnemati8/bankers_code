@@ -4,11 +4,11 @@
         {
             "label": "build",
             "type": "shell",
-            "command": "path_to_clang++",  // Use the actual Clang path here
+            "command": "clang++",
             "args": [
                 "-o",
-                "dining_philosophers",
-                "dining_philosophers.c",
+                "${fileDirname}/${fileBasenameNoExtension}",
+                "${file}",
                 "-lpthread"
             ],
             "group": {
@@ -19,7 +19,7 @@
         {
             "label": "run",
             "type": "shell",
-            "command": "./dining_philosophers",
+            "command": "${fileDirname}/${fileBasenameNoExtension}",
             "group": {
                 "kind": "test",
                 "isDefault": true
